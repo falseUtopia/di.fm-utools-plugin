@@ -2,10 +2,13 @@
   "pluginName": "163 di.fm",
   "description": "di.fm 电子音乐FM",
   "preload": "preload.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "logo": "logo.png",
   "author": "falseUtopia",
   "homepage": "https://gitee.com/falseutopia/di.fm-utools-plugin",
+  "pluginSetting": {
+    "single": true
+  },
   "features": [
     {
       "code": "di.fm",

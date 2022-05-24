@@ -19,10 +19,22 @@ window.exports = {
                 console.log('插件装配完成')
 
                 window.utools.ubrowser
-                    .device('HUAWEI Mate30')
+                    .device('iPhone 5/SE')
                     .goto('https://mp.music.163.com/5c8764e4ff3225d6738f615c/index.html?channe1Id=1060')
                     //.devTools()
-                    .run();
+                    .wait(
+                        () => {
+
+                            if (document.querySelector('div[class^="fulllayer"]') == undefined) {
+                                return false;
+
+                            }
+                            document.querySelector('div[class^="fulllayer"]').remove()
+                            return true;
+
+                        })
+                    .run()
+
 
             }
         }
