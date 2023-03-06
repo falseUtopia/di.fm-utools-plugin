@@ -30,6 +30,7 @@ window.exports = {
 
                             }
                             document.querySelector('div[class^="fulllayer"]').remove()
+                            document.querySelector('canvas[class^="canvas_3no-kY"]').remove()
                             return true;
 
                         })

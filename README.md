@@ -21,6 +21,7 @@ uTools插件开发文档 https://u.tools/docs/developer/welcome.html
 
 - 0.0.1 能听
 - 0.0.2 修复点击任意按钮跳转到去下载的界面
+- 0.0.3 处理因canvas导致CPU占用过高的问题
 
 ### TODO
 
