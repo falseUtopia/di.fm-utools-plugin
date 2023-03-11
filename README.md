@@ -20,7 +20,7 @@ uTools插件开发文档 https://u.tools/docs/developer/welcome.html
 ### 更新
 
 - 0.0.3
-  去掉canvas以免使用CPU渲染导致CPU高
+  处理因canvas导致CPU占用过高的问题
   支持空格控制 播放/暂停
 
 - 0.0.2
