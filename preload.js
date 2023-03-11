@@ -24,12 +24,22 @@ window.exports = {
                     //.devTools()
                     .wait(
                         () => {
+                            if (window.onkeydown == null) {
+                                window.onkeydown = function (e) {
+
+                                    if (e.code === 'Space') {
+                                        document.getElementsByClassName('play_3M0S4e')[0].click()
+                                    }
+
+                                }
+                            }
 
                             if (document.querySelector('div[class^="fulllayer"]') == undefined) {
                                 return false;
 
                             }
                             document.querySelector('div[class^="fulllayer"]').remove()
+                            document.querySelector('canvas[class^="canvas_3no-kY"]').remove()
                             return true;
 
                         })
